@@ -1,0 +1,22 @@
+{
+  "name": "ti-ddb",
+  "version": "0.0.0",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-dynamodb": "^3.405.0",
+    "@aws-sdk/lib-dynamodb": "^3.405.0",
+    "@aws-sdk/util-dynamodb": "^3.405.0",
+    "@types/node": "^20.1.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "@aws-sdk/client-dynamodb": "^3.0.0",
+    "@aws-sdk/lib-dynamodb": "^3.0.0"
+  }
+}

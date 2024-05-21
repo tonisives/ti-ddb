@@ -212,7 +212,7 @@ export const batchScanAll = async (dynamodb: DynamoDBDocumentClient, input: Scan
     result.Items?.forEach((item) => {
       results.push(item)
     })
-    console.log("got items", result.Items?.length)
+    process.stdout.write(`-${result.Items?.length}\r`);
     lastEvalKey = result.LastEvaluatedKey
   } while (lastEvalKey !== undefined)
   console.log(`total items: ${results.length}`)
